@@ -5,18 +5,16 @@ Using Python3 and tkinter, etc...
 ## Enable Functions  
 * New
 * Open
-* Save   
+* Save
 
 very simple  
 
 ## Features
-#### change
-* font size
-* font style
-
-#### technical
-* changeable window size
+* variable font size
+* support to more font
 * support user setting
+* enable to variable window size
+* change to program icon
 
 ## need modules
 * python tkinter
