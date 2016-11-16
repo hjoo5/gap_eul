@@ -5,7 +5,7 @@ Using Python3 and tkinter, etc...
 ## Enable Functions  
 * New
 * Open
-* Save
+* Save   
 very simple  
 
 ## Features
