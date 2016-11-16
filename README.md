@@ -12,9 +12,9 @@ You are planning to implement the Text editor as a GUI.
 
 ## need modules
 * python tkinter
-'''bash 
+```bash 
 pip3 install python-tk
-'''
+```
 
 ## Requirements
 python 3.x
