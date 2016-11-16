@@ -2,6 +2,12 @@
 You are planning to implement the Text editor as a GUI.  
 Using Python3 and tkinter, etc...
 
+## Enable Functions  
+* New
+* Open
+* Save
+very simple  
+
 ## Features
 #### change
 * font size
