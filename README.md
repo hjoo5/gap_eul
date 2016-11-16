@@ -8,7 +8,7 @@ You are planning to implement the Text editor as a GUI.
 
 #### technical
 * changeable window size
-* 
+* support user setting
 
 
 ## Requirements
