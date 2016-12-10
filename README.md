@@ -6,12 +6,13 @@ Using Python3 and tkinter, etc...
 * New
 * Open
 * Save
+* Change font size
+* Change font (in your computer)
 
 very simple  
 
 ## Features
-* variable font size
-* support to more font
+* combine two screens
 * support user setting
 * enable to variable window size
 * change to program icon
