@@ -2,6 +2,7 @@ SIMPLE :memo:
 =============
 
 [![License](https://img.shields.io/badge/license-GPL3.0-green.svg)](https://opensource.org/licenses/GPL3.0)
+[![Language](https://img.shields.io/badge/Language-Python-blue.svg)](https://www.python.org/)
 
               ________________________________  ___     _________
              /  _____/__   ___/        /  _   \/  /\   /  ______/\
