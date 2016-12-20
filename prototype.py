@@ -1,4 +1,3 @@
-import tkinter
 from tkinter import *
 from tkinter.scrolledtext import *
 import tkinter.filedialog as filedialog
@@ -6,7 +5,7 @@ import tkinter.messagebox as tkMessageBox
 import time
 import os
 
-root = tkinter.Tk(className=" Simple Text Editor")
+root = tkinter.Tk(className="Simple Text Editor")
 textPad = ScrolledText(root, width=100, height=80, highlightcolor = "white")
 
 def open_command():
@@ -18,7 +17,10 @@ def open_command():
         file.close()
 
 def save_command():
-    file = filedialog.asksaveasfile(mode='w')
+    file = filedialog.asksaveasfile(defaultextension='.txt',
+                                 filetypes=(('Text files', '*.txt'),
+                                            ('Python files', '*.py *.pyw'),
+                                            ('All files', '*.*')))
     if file != None:
         data = textPad.get('1.0', END+'-1c')
         file.write(data)
@@ -35,12 +37,6 @@ def about_command():
 def new_command():
     textPad.delete('1.0', END);
 
-def font_setting():
-    for x in os.listdir("/Users/yangjoonhyuk/Library/Fonts"):
-        textPad["font"] = x.split(".")[0]
-        time.sleep(1)
-
-
 menu = Menu(root)
 root.config(menu=menu)
 filemenu = Menu(menu)
@@ -51,8 +47,6 @@ filemenu.add_command(label="Save", command=save_command, accelerator = "Ctrl+S")
 filemenu.add_separator()
 filemenu.add_command(label="Exit", command=exit_command)
 settingmenu = Menu(menu)
-menu.add_cascade(label = "Setting", menu=settingmenu)
-settingmenu.add_command(label = "Font", command = font_setting)
 helpmenu = Menu(menu)
 menu.add_cascade(label="Help", menu=helpmenu)
 helpmenu.add_command(label="About...", command=about_command)
