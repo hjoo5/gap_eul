@@ -62,7 +62,7 @@ No dependencies outside the Python Standard Library required.
 ## Goals  
 - [ ] Built in multi cursor support.  
 - [ ] Multi cursor should be comparable to Atom.  
-- [ ] Develop SIMPLE with SIMPLE!!! I've used Suplemon for a long time as my main  
+- [ ] Develop SIMPLE with SIMPLE!!!
 - [ ] Syntax highlighting with Text Mate themes  
 
 ## Description
