@@ -4,8 +4,21 @@ from tkinter.simpledialog import *
 from tkinter.scrolledtext import *
 from tkinter.messagebox import *
 import os
+ '''The person in charge
+    ====================
+    JoonHyuk Yang
+
+    If you have a very simple implementation, please leave an issue if you do not know.
+
+    '''
 
 def new_command(event = None):
+     '''It is a function of making new file.
+
+        The default filename is untitled.
+
+        If you warn the user and say yes, remove textarea.
+        '''
     t = 'Untitled.txt'
     confirm = result = askquestion("New File", "All unsaved work will be deleted.Continue?", icon = 'warning')
     if confirm == 'yes':
@@ -14,6 +27,10 @@ def new_command(event = None):
     lnupdater()
 
 def open_command(event = None):
+    '''It is a function to open files.
+
+       If the file is not None, discard the textarea and then insert the new file.
+       '''
     filename = askopenfilename(parent = window,title = 'Select a file')
     if filename != None:
         fo = open(filename,mode = 'r')
@@ -25,6 +42,10 @@ def open_command(event = None):
     lnupdater()
 
 def save_command(event = None):
+     '''It is a function to save files.
+
+        Overwrite existing files.
+        '''
     filename = asksaveasfilename(parent = window,defaultextension = '.txt',title = 'Save file as')
     if filename is not None:
         file = open(filename,mode = 'w')
@@ -34,6 +55,10 @@ def save_command(event = None):
         lnupdater()
 
 def saveas_command(event = None):
+     '''It is a function to save as files.
+
+        Save as a new name.
+        '''
     f = asksaveasfilename(parent = window,defaultextension = '.txt',title = 'Save As')
     fs = open(f,mode = 'w')
     contents = textarea.get('1.0', END)
