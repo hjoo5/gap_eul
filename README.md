@@ -59,10 +59,10 @@ Install tkinter the latest version from PIP:
 No dependencies outside the Python Standard Library required.
 
 ## Goals
- 1. [] Built in multi cursor support.
- 2. [] Multi cursor should be comparable to Atom.
- 3. [] Develop SIMPLE with SIMPLE!!! I've used Suplemon for a long time as my main
- 4. [] Syntax highlighting with Text Mate themes
+ - [] Built in multi cursor support.
+ - [] Multi cursor should be comparable to Atom.
+ - [] Develop SIMPLE with SIMPLE!!! I've used Suplemon for a long time as my main
+ - [] Syntax highlighting with Text Mate themes
 
 ## Description
 SIMPLE is an intuitive graphical user interface text editor.  
